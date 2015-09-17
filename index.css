@@ -64,3 +64,32 @@ body{
 #droite img{
 	width: 100%;
 }
+
+/*mobile*/
+@media screen and (max-width: 480px){
+	#gauche{
+		position: fixed;
+    	top:0;
+    	margin : 0;
+    	background: #DEDEDE/*#fd7e01*/;
+    	width: 100%;
+    	clear : both;
+    	height: 1px;
+	}
+	#gauche img{
+		width: 50%;
+		float : left;
+		top : -20px;
+	}
+	#gauche h1{
+		display: none;
+	}
+    #gauche .nav{
+    	float : left;
+    	display: inline-block;
+    }
+
+    #droite{
+    	margin-top: 80px;
+    }
+}
