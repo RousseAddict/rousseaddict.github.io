@@ -53,6 +53,7 @@ body{
 #gauche .nav a:hover{
 	color: darkgrey; 
 }
+
 /*Droite*/
 
 #droite{
@@ -66,7 +67,7 @@ body{
 }
 
 /*mobile*/
-@media screen and (max-width: 480px){
+@media screen and (max-width: 640px){
 	#gauche{
 		position: fixed;
     	top:0;
