@@ -1,0 +1,80 @@
+/*
+POLICE
+*/
+@font-face{
+	font-family: "OpenSansLight";
+	src: url('police/OpenSans-Light.ttf'); 
+}
+@font-face{
+	font-family: "OpenSansSemiBold";
+	src: url('police/OpenSans-Semibold.ttf'); 
+}
+
+/*
+GENERAL
+*/
+
+html{
+	max-width: 100%;
+	margin: auto;
+	font-family: OpenSansLight;
+}
+
+body{
+	margin: auto;
+	top: 0;
+	left: 0;
+	background:#EFEFEF; /*a supprimer ensuite*/
+}
+
+footer{
+	text-align: center;
+
+}
+/*nav*/
+.nav{
+	position: fixed;
+	z-index: 2;
+	color: white;
+	background: #fd7e01;
+	height: 50px;
+	width: 100%;
+}
+
+.nav img{
+	width: 50px;
+	float: left;
+}
+.nav #BoutonMenu{
+	width: 50px;
+	height :50px;
+	float: right;
+	background-color: white;
+	background-image: url('img/boutonMenu.png');
+}
+
+.nav h3{
+	float: left;
+	font-family: OpenSansSemiBold;
+	font-size: large;
+}
+
+/*nav2*/
+.nav2{
+	display: none;
+	background: #fd7e01;
+	position: absolute;
+	top:50px;
+}
+
+/*photo*/
+.container{
+	display : block;
+	position: relative;
+	text-align: center;
+	margin: auto;
+	width: 95%;
+	border: 5px solid #ddd;
+	padding-top: 5px;
+	background: white;
+}
