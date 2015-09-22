@@ -15,7 +15,8 @@ GENERAL
 */
 
 html{
-	max-width: 100%;
+	/*max-width: 800px;*/
+	min-width: 482px;
 	margin: auto;
 	font-family: OpenSansLight;
 }
@@ -24,6 +25,7 @@ body{
 	margin: auto;
 	top: 0;
 	left: 0;
+	right: 0;
 	background:#EFEFEF; /*a supprimer ensuite*/
 }
 
@@ -73,8 +75,11 @@ footer{
 	position: relative;
 	text-align: center;
 	margin: auto;
+	padding-top: 5px;
 	width: 95%;
 	border: 5px solid #ddd;
-	padding-top: 5px;
 	background: white;
+}
+.container img{
+	max-width: 93%;
 }
