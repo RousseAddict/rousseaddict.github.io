@@ -16,7 +16,7 @@ GENERAL
 
 html{
 	/*max-width: 800px;*/
-	min-width: 482px;
+	min-width: 480px;
 	margin: auto;
 	font-family: OpenSansLight;
 }
@@ -67,6 +67,7 @@ footer{
 	background: #fd7e01;
 	position: absolute;
 	top: 50px;
+	right: 0;
 }
 .nav2 li{
 	text-decoration: none;
