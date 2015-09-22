@@ -2,20 +2,23 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width"/>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
   <title>RousseAddict</title>
   <link rel="stylesheet" href="mobile.css">
   <link rel="icon" type="image/png" href="img/logo.png" />
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
-<body onload="randomImg()">
-	<div class="nav"/>
+<body onLoad="randomImg()">
+	<div class="nav">
 		<img src="img/logoBlanc.png"/>
 		<h3>RousseAddict</h3>
 		<div id="BoutonMenu">
+			<img src="img/boutonMenu.png"/>
 		</div>
 	</div>
 	<br /><br /><br />
-	<div class="nav2">
+	<div class="nav2" onClick="menuO()">
 		<ul>
 			<li>Home</li>
 			<li>Random</li>
@@ -29,5 +32,5 @@
 </body>
 <footer>
 	<br />
-	copyright © 2014-2015 | #RousseAddict 
+	copyright © 2014-2015 | #RousseAddict | <a href="../index.html">PC version</a>
 </footer>
