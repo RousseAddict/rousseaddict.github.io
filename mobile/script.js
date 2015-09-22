@@ -24,6 +24,6 @@ function randomImg(){
 $( "#BoutonMenu" ).click(function() {
   $( ".nav2" ).css('right','0');
 });
-$( 'html' ).click(function() {
+$( 'body' ).click(function() {
   $('.nav2').css('right',(-larg/2)+"px");
 });
