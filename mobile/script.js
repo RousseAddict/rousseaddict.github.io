@@ -5,6 +5,7 @@ loaded index.html version mobile
 //ajuster la taille de l'image principale à la taille de l'écran
 var larg = (window.innerWidth);
 $('body').css('width',(larg)+"px");
+$('footer').css('width',(larg)+"px");
 $('.container').css('width',(larg-20)+"px");
 $('.container img').css('width',(larg-30)+"px");
 //ajuster la taille du menu à la moitié de la taille de l'écran
