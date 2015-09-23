@@ -16,7 +16,7 @@ GENERAL
 
 html{
 	/*max-width: 800px;*/
-	min-width: 480px;
+	min-width: 400px;
 	margin: auto;
 	font-family: OpenSansLight;
 }
