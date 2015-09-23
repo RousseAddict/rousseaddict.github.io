@@ -11,7 +11,6 @@ $('.container img').css('width',(larg-45)+"px");
 var haut = (window.innerHeight);
 $('.nav2').css('width',(larg/2)+"px");
 $('.nav2').css('height',(haut-50)+"px");
-
 /*
 functions
 */
@@ -25,6 +24,6 @@ function randomImg(){
 $( "#BoutonMenu" ).click(function() {
   $( ".nav2" ).css('display','block');
 });
-$('body').not($('#BoutonMenu')).click(function() {
+$( '.container' ).click(function() {
   $( ".nav2" ).css('display','none');
 });
