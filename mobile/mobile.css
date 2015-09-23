@@ -80,16 +80,16 @@ footer a:hover{
 }
 .nav2 li{
 	padding-bottom: 15px;
-	background-image: url('img/boutonHome.png');
-  background-repeat: no-repeat;
-  background-position: 0 0.4em;
 }
 .nav2 li a{
 	text-decoration: none;
 	color: white;
 	font-family: OpenSansSemiBold;
 }
-
+.nav2 li a img{
+	height: 50px;
+	vertical-align: middle;
+}
 /*INDEX.html*/
 .container{
 	display: block;
