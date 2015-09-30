@@ -28,10 +28,18 @@ h1{
 
 img{
 	max-width: 30%;
-	vertical-align: middle;
+	float: left;
+}
+
+div{
+	float: right;
+	margin-right: 30px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 a{
+
 	text-decoration: none;
 	font-family: OpenSansSemiBold;
 	padding: 5px;
@@ -48,4 +56,11 @@ a:hover{
 p{
 	text-align: center;
 	color: darkgrey;
+	clear: both;
+}
+
+footer{
+	bottom: 0;
+	text-align: center;
+	margin-top: 120px;
 }
