@@ -89,7 +89,9 @@ footer a:hover{
 	height: 50px;
 	vertical-align: middle;
 }
-/*INDEX.html*/
+/*
+*INDEX.html*
+*/
 .container{
 	display: block;
 	position: relative;
@@ -103,6 +105,18 @@ footer a:hover{
 
 }
 
-/*GALLERY.html*/
+/**
+GALLERY.html*
+*/
+#gallery{
+	margin: auto;
+}
 
-/*CONTACT.html*/
+#gallery img{
+
+  max-width: 50%;
+  height: 15em;
+  margin-left: 5px;
+/*
+*CONTACT.html*
+*/
