@@ -17,6 +17,7 @@ GENERAL
 html{
 	margin: auto;
 	font-family: OpenSansLight;
+	overflow-x: hidden;
 }
 
 body{

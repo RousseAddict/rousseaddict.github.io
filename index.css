@@ -15,82 +15,37 @@ GENERAL
 */
 
 html{
-	max-width: 100%;
 	margin: auto;
 	font-family: OpenSansLight;
+	overflow: hidden;
 }
 
-body{
-	margin: auto;
-	top:0;
-	left:0;
-}
-
-/*Gauche*/
-#gauche{
-	max-width: 30%;
-	height: 100%;
-	float: left;
-	padding-top:15%;
-	margin-left: 5%;
-}
-#gauche img{
-	
-}
-#gauche h1{
-	margin-top: -20px;
-	color: #fd7e01;
+h1{
 	text-align: center;
+	color: #fd7e01;
 	font-family: OpenSansSemiBold;
 }
-#gauche .nav{
-	list-style-type: none;
+
+img{
+	max-width: 30%;
+	vertical-align: middle;
 }
-#gauche .nav a{
+
+a{
 	text-decoration: none;
+	font-family: OpenSansSemiBold;
+	padding: 5px;
+	color: white;
+	border: solid 1px #fd7e01;
+	border-radius: 5px;
+	background-color: #fd7e01;
+}
+
+a:hover{
 	color: grey;
 }
-#gauche .nav a:hover{
-	color: darkgrey; 
-}
 
-/*Droite*/
-
-#droite{
-	max-width: 70%;
-	float: left;
-	background: #EFEFEF;
-	margin-left: 5%;
-}
-#droite img{
-	width: 100%;
-}
-
-/*mobile*/
-@media screen and (max-width: 640px){
-	#gauche{
-		position: fixed;
-    	top:0;
-    	margin : 0;
-    	background: #DEDEDE/*#fd7e01*/;
-    	width: 100%;
-    	clear : both;
-    	height: 1px;
-	}
-	#gauche img{
-		width: 50%;
-		float : left;
-		top : -20px;
-	}
-	#gauche h1{
-		display: none;
-	}
-    #gauche .nav{
-    	float : left;
-    	display: inline-block;
-    }
-
-    #droite{
-    	margin-top: 80px;
-    }
+p{
+	text-align: center;
+	color: darkgrey;
 }
