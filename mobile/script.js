@@ -17,7 +17,7 @@ functions
 
 //génère une image aléatoire parmis la liste des images diponibles
 function randomImg(){
-   document.getElementById('image').src = "../rousses/" + Math.round(Math.random()*70) + ".jpg";
+   document.getElementById('image').src = "../rousses/" + Math.round(Math.random()*97) + ".jpg";
 }
 
 //gère l'action du bouton du menu
