@@ -13,6 +13,10 @@ $('.container img').css('width',(larg-45)+"px");
 var haut = (window.innerHeight);
 $('.nav2').css('width',(larg/2)+"px");
 $('.nav2').css('height',(haut-50)+"px");
+
+//centrer le #bDown
+$('#bDown').css('margin-left',((larg/2)-25)+"px");
+
 /*
 functions
 */
