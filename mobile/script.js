@@ -1,5 +1,5 @@
 max = 97;
-
+countDown = max - 10;
 /*
 loaded index.html version mobile
 */
@@ -39,7 +39,7 @@ loaded gallery.html version mobile
 function galleryImg(){
 	var divGallery = document.getElementById('gallery');
 	var myImg;
-	for (i=max; i >= max-10 ; i--){
+	for (i=max; i > countDown; i--){
 		myImg = document.createElement('IMG');
 		myImg.src = "../rousses/"+i+".jpg";
 		divGallery.appendChild(myImg);
@@ -49,10 +49,15 @@ function galleryImg(){
 function galleryImgDown(){
 	var divGallery = document.getElementById('gallery');
 	var myImg;
-	for (i=max-10; i >= max-20 ; i--){
+	for (i=countDown; i > countDown - 10 ; i--){
 		myImg = document.createElement('IMG');
 		myImg.src = "../rousses/"+i+".jpg";
 		divGallery.appendChild(myImg);
+	}
+	if (countDown > 10)
+		countDown = countDown - 10;
+	else{
+		$('#bDown').css('display','none');
 	}
 }
 $( "#bDown" ).click(function() {
