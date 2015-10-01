@@ -1,3 +1,5 @@
+max = 97;
+
 /*
 loaded index.html version mobile
 */
@@ -23,19 +25,36 @@ $( '.container' ).click(function() {
   $( ".nav2" ).css('display','none');
 });
 
+
 //génère une image aléatoire parmis la liste des images diponibles
 function randomImg(){
-   document.getElementById('image').src = "../rousses/" + Math.round(Math.random()*97) + ".jpg";
+   document.getElementById('image').src = "../rousses/" + Math.round(Math.random()*(max)) + ".jpg";
 }
+
+/*
+loaded gallery.html version mobile
+*/
 
 //génère la gallerie
 function galleryImg(){
 	var divGallery = document.getElementById('gallery');
 	var myImg;
-	for (i=97; i >= 0 ; i--){
-		//myImg = (divGallery.innerHTML = '<img src ="../rousses/'+i+'.jpg"/>');
+	for (i=max; i >= max-10 ; i--){
 		myImg = document.createElement('IMG');
 		myImg.src = "../rousses/"+i+".jpg";
 		divGallery.appendChild(myImg);
 	}
 }
+//bouton afficher + dans la gallerie
+function galleryImgDown(){
+	var divGallery = document.getElementById('gallery');
+	var myImg;
+	for (i=max-10; i >= max-20 ; i--){
+		myImg = document.createElement('IMG');
+		myImg.src = "../rousses/"+i+".jpg";
+		divGallery.appendChild(myImg);
+	}
+}
+$( "#bDown" ).click(function() {
+	galleryImgDown();
+});

@@ -115,8 +115,16 @@ GALLERY.html*
 #gallery img{
 
   max-width: 50%;
-  height: 15em;
+  height: 10em;
   margin-left: 5px;
+}
+
+#bDown{
+	height: 50px;
+	width: 50px;
+	vertical-align: middle;
+	margin: auto;
+}
 /*
 *CONTACT.html*
 */
