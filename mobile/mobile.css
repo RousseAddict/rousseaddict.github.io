@@ -78,12 +78,13 @@ footer a:hover{
 	list-style-type: none;
 }
 .nav2 li{
-	padding-bottom: 15px;
+	padding-bottom: 18px;
 }
 .nav2 li a{
 	text-decoration: none;
 	color: white;
 	font-family: OpenSansSemiBold;
+	font-size: large;
 }
 .nav2 li a img{
 	height: 50px;
@@ -114,7 +115,7 @@ GALLERY.html*
 
 #gallery img{ /*aussi appelé .rousses*/
 	display: block;
-  	/*max-width: 50%;*/
+  	max-width: 95%;
 	height: 10em;
 	margin-left: auto;
 	margin-right: auto;

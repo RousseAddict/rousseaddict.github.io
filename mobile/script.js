@@ -28,7 +28,9 @@ $( "#BoutonMenu" ).click(function() {
 $( '.container' ).click(function() {
   $( ".nav2" ).css('display','none');
 });
-
+$( '#gallery' ).click(function() {
+  $( ".nav2" ).css('display','none');
+});
 
 //génère une image aléatoire parmis la liste des images diponibles
 function randomImg(){
@@ -69,4 +71,5 @@ function galleryImgDown(){
 $( "#bDown" ).click(function() {
 	galleryImgDown();
 });
+
 //aggrandir une photo de la gallerie
