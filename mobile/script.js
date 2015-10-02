@@ -56,6 +56,7 @@ function galleryImgDown(){
 	for (i=countDown; i > countDown - 10 ; i--){
 		myImg = document.createElement('IMG');
 		myImg.src = "../rousses/"+i+".jpg";
+		myImg.class ="rousses"
 		divGallery.appendChild(myImg);
 	}
 	if (countDown > 10)
@@ -64,6 +65,8 @@ function galleryImgDown(){
 		$('#bDown').css('display','none');
 	}
 }
+//actionner le chargement de plus d'images
 $( "#bDown" ).click(function() {
 	galleryImgDown();
 });
+//aggrandir une photo de la gallerie
