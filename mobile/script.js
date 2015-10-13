@@ -59,6 +59,7 @@ function galleryImgDown(){
 		myImg = document.createElement('IMG');
 		myImg.src = "../rousses/"+i+".jpg";
 		myImg.class ="rousses"
+		myImg.onclick = "return this.height ='haut';";
 		divGallery.appendChild(myImg);
 	}
 	if (countDown > 10)
