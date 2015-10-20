@@ -136,3 +136,6 @@ GALLERY.html*
 /*
 *CONTACT.html*
 */
+#contactForm{
+	padding-bottom: 10px;
+}
