@@ -27,6 +27,12 @@ body{
 	background:#EFEFEF; /*a supprimer ensuite*/
 }
 
+h2{
+	margin : auto;
+	text-align : center;
+	color : #fd7e01;
+	font-family: OpenSansSemiBold;
+}
 footer{
 	text-align: center;
 

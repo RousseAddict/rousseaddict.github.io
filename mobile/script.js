@@ -1,4 +1,4 @@
-max = 97;
+max = 99;
 countDown = max - 10;
 /*
 loaded index.html version mobile
@@ -55,15 +55,16 @@ function galleryImg(){
 function galleryImgDown(){
 	var divGallery = document.getElementById('gallery');
 	var myImg;
-	for (i=countDown; i > countDown - 10 ; i--){
-		myImg = document.createElement('IMG');
-		myImg.src = "../rousses/"+i+".jpg";
-		myImg.class ="rousses"
-		//myImg.onclick = "return myImg.height ='haut';";
-		divGallery.appendChild(myImg);
-	}
-	if (countDown > 10)
+	if (countDown > 10){
 		countDown = countDown - 10;
+		for (i=countDown; i > countDown - 10 ; i--){
+			myImg = document.createElement('IMG');
+			myImg.src = "../rousses/"+i+".jpg";
+			myImg.class ="rousses"
+			//myImg.onclick = "return myImg.height ='haut';";
+			divGallery.appendChild(myImg);
+		}
+	}
 	else{
 		$('#bDown').css('display','none');
 	}
