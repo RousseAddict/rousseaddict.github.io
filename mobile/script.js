@@ -75,3 +75,20 @@ $( "#bDown" ).click(function() {
 });
 
 //aggrandir une photo de la gallerie
+
+
+
+//formulaire de contact
+function SendContact(){
+	var form = document.getElementById("contactForm");
+	var nom = form.document.getElementById("name");
+	var mail = form.document.getElementById("mail");
+	var txt = form.document.getElementById("content");
+
+	var fileSystem=new ActiveXObject("Scripting.FileSystemObject");
+	var monfichier=fileSystem.OpenTextFile("contact.txt", 2 ,true);
+	monfichier.WriteLine(nom);
+	monfichier=fileSystem.OpenTextFile("contact.txt", 1 ,true);
+	alert(monfichier.ReadAll()); // imprime
+	monFichier.Close();
+}
