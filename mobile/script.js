@@ -22,8 +22,12 @@ functions
 */
 
 //gère l'action du bouton du menu
+var EtatMenu = false;
 $( "#BoutonMenu" ).click(function() {
-  $( ".nav2" ).css('display','block');
+	if (EtatMenu)
+  		$( ".nav2" ).css('display','block');
+  	else
+  		$( ".nav2" ).css('display','none');
 });
 $( '.container' ).click(function() {
   $( ".nav2" ).css('display','none');
@@ -77,6 +81,9 @@ $( "#bDown" ).click(function() {
 //aggrandir une photo de la gallerie
 
 
+/*
+Contact
+*/
 
 //formulaire de contact
 function SendContact(){
