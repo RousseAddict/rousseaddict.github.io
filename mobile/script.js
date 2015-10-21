@@ -86,9 +86,9 @@ function SendContact(){
 	var txt = form.document.getElementById("content");
 
 	var fileSystem=new ActiveXObject("Scripting.FileSystemObject");
-	var monfichier=fileSystem.OpenTextFile("contact.txt", 2 ,true);
+	var monfichier=fileSystem.OpenTextFile("contactForm.txt", 2 ,true);
 	monfichier.WriteLine(nom);
-	monfichier=fileSystem.OpenTextFile("contact.txt", 1 ,true);
+	monfichier=fileSystem.OpenTextFile("contactForm.txt", 1 ,true);
 	alert(monfichier.ReadAll()); // imprime
 	monFichier.Close();
 }
