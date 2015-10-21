@@ -33,13 +33,7 @@ $( "#BoutonMenu" ).click(function() {
   		EtatMenu = false;
   	}
 });
-//a tester
-$( 'body' ).click(function() {
-	if (EtatMenu){
-		$( ".nav2" ).css('display','none');
-		EtatMenu = false;
-	}
-});
+
 //bof bof
 $( '.container' ).click(function() {
   $( ".nav2" ).css('display','none');
