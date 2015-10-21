@@ -24,7 +24,7 @@ functions
 //gère l'action du bouton du menu
 var EtatMenu = false;
 $( "#BoutonMenu" ).click(function() {
-	if (!EtatMenu){
+	if (EtatMenu == false){
   		$( ".nav2" ).css('display','block');
   		EtatMenu = true;
   	}
