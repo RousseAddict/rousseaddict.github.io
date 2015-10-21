@@ -76,7 +76,7 @@ footer a:hover{
 	display: none;
 	z-index: 2;
 	background: #fd7e01;
-	position: absolute;
+	position: fixed;
 	top: 50px;
 	right: 0;
 }
@@ -112,6 +112,18 @@ footer a:hover{
 
 }
 
+#last{
+	display: block;
+	position: relative;
+	text-align: center;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding : 5px;
+	background-color: #fd7e01;
+	color : white;
+	font-family: OpenSansSemiBold;
+	text-decoration: none;
+}
 /**
 GALLERY.html*
 */
