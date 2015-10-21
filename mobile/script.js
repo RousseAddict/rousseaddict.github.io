@@ -24,10 +24,14 @@ functions
 //gère l'action du bouton du menu
 var EtatMenu = false;
 $( "#BoutonMenu" ).click(function() {
-	if (EtatMenu)
+	if (EtatMenu){
   		$( ".nav2" ).css('display','block');
-  	else
+  		EtatMenu = true;
+  	}
+  	else{
   		$( ".nav2" ).css('display','none');
+  		EtatMenu = false;
+  	}
 });
 $( '.container' ).click(function() {
   $( ".nav2" ).css('display','none');
