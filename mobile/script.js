@@ -45,7 +45,8 @@ $( '#gallery' ).click(function() {
 
 //génère une image aléatoire parmis la liste des images diponibles
 function randomImg(){
-   document.getElementById('image').src = "../rousses/" + Math.round(Math.random()*(max)) + ".jpg";
+   var rand = "../rousses/" + Math.round(Math.random()*(max)) + ".jpg";
+   document.getElementById('image').src = rand;
 }
 
 /*
@@ -59,6 +60,7 @@ function galleryImg(){
 	for (i=max; i > countDown; i--){
 		myImg = document.createElement('IMG');
 		myImg.src = "../rousses/"+i+".jpg";
+		myImg.id =i;
 		divGallery.appendChild(myImg);
 	}
 }
@@ -71,7 +73,7 @@ function galleryImgDown(){
 		for (i=countDown; i > countDown - 10 ; i--){
 			myImg = document.createElement('IMG');
 			myImg.src = "../rousses/"+i+".jpg";
-			myImg.class ="rousses"
+			myImg.id =i;
 			//myImg.onclick = "return myImg.height ='haut';";
 			divGallery.appendChild(myImg);
 		}
