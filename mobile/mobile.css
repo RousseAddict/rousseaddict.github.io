@@ -127,6 +127,11 @@ footer a:hover{
 /**
 GALLERY.html*
 */
+#zoomed{
+	display: none;
+	margin: auto;
+}
+
 #gallery{
 	margin: auto;
 }

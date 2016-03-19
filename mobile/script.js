@@ -1,4 +1,4 @@
-max = 99;
+max = 110;
 countDown = max - 10;
 /*
 loaded index.html version mobile
@@ -74,6 +74,7 @@ function galleryImgDown(){
 			myImg = document.createElement('IMG');
 			myImg.src = "../rousses/"+i+".jpg";
 			myImg.id =i;
+			//myImg.attr('id', i);
 			//myImg.onclick = "return myImg.height ='haut';";
 			divGallery.appendChild(myImg);
 		}
@@ -82,12 +83,40 @@ function galleryImgDown(){
 		$('#bDown').css('display','none');
 	}
 }
+
 //actionner le chargement de plus d'images
 $( "#bDown" ).click(function() {
 	galleryImgDown();
 });
 
 //aggrandir une photo de la gallerie
+$("#zoomed").css('max-width',(larg-35)+"px");
+$("#zoomed").css('max-height',(haut-55)+"px");
+
+function zoomImg(img){
+	var getSrc = $(img).attr('src');
+	$("#zoomed").attr('src', getSrc);
+	$("#zoomed").css('display','block');
+	$("#zoomed").css('margin-bottom','10px');
+}
+
+	/*
+	$('#gallery').children().live('click', function() {
+		zoomImg("#"+$(this).attr('id'));
+
+	});
+	*/
+	
+	$("#"+max).live('click', function(){
+		zoomImg("#"+max);
+	})
+//});
+
+//annuler l'effet d'aggrandissement d'une photo de la gallerie	
+$("#zoomed").click(function() {
+		$("#zoomed").css('display','none');
+	});
+
 
 
 /*
