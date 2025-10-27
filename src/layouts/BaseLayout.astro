@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+import ThemeToggle from '../components/ThemeToggle.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'RousseAddict Blog',
+  description = 'A minimalist blog built with Astro'
+} = Astro.props;
+
+const fullTitle = title === 'RousseAddict Blog' ? title : `${title} | RousseAddict Blog`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content={description}>
+  <title>{fullTitle}</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo">RousseAddict</a>
+      <div style="display: flex; align-items: center; gap: 2rem;">
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+        <ThemeToggle />
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <slot />
+  </main>
+  
+  <footer>
+    <p>&copy; {new Date().getFullYear()} RousseAddict. All rights reserved.</p>
+  </footer>
+</body>
+</html>

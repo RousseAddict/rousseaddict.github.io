@@ -1,0 +1,92 @@
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+
+# Compiled binary 
+build/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Storybook static files
+storybook-static/
+
+# Typescript v1 declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variables file
+.env.development
+.env.production
+.env.test
+
+# vite files
+.cache/
+dist/
+
+# pact files
+pact/logs
+pact/pacts
+
+# Mac files
+.DS_Store
+
+# Yarn
+yarn-error.log
+.pnp/
+.pnp.js
+# Yarn Integrity file
+.yarn-integrity
+
+.idea
+.idea/
+.vscode/*
+!.vscode/launch.json
+.project
+.gradle
+.settings
+.npm
+.history
+
+deployment/aws/.terraform
+
+# Local npm repository
+.yalc/
+yalc.lock
+
+# e2e tests artefact
+state.json
+test-results
+.env.staging
+.env.prod
+playwright-report/
+
+# Terraform
+.terraform/
+
+# Qodana
+.qodana/
+
+# Renovate
+.env-renovate

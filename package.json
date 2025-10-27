@@ -1,0 +1,25 @@
+{
+  "name": "rousseaddict.github.io",
+  "version": "1.0.0",
+  "description": "blog rousseaddict",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RousseAddict/rousseaddict.github.io.git"
+  },
+  "author": "RousseAddict",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RousseAddict/rousseaddict.github.io/issues"
+  },
+  "homepage": "https://github.com/RousseAddict/rousseaddict.github.io#readme",
+  "dependencies": {
+    "astro": "^4.16.0"
+  }
+}

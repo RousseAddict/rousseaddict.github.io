@@ -1,0 +1,256 @@
+:root {
+  --color-text: #1a1a1a;
+  --color-text-light: #666;
+  --color-bg: #ffffff;
+  --color-accent: #2563eb;
+  --color-border: #e5e7eb;
+  --color-code-bg: #f3f4f6;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  --max-width: 720px;
+}
+
+:root.dark {
+  --color-text: #e5e7eb;
+  --color-text-light: #9ca3af;
+  --color-bg: #1a1a1a;
+  --color-accent: #60a5fa;
+  --color-border: #374151;
+  --color-code-bg: #2d2d2d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* Header */
+header {
+  border-bottom: 1px solid var(--color-border);
+  padding: 1.5rem 0;
+}
+
+header nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+header .nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--color-border);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+}
+
+/* Post Card */
+.post-card {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.post-card:last-child {
+  border-bottom: none;
+}
+
+.post-card h2 {
+  margin-bottom: 0.5rem;
+}
+
+.post-meta {
+  display: flex;
+  gap: 1rem;
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.tag {
+  padding: 0.25rem 0.75rem;
+  background-color: var(--color-code-bg);
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.tag:hover {
+  opacity: 0.8;
+}
+
+/* Post Content */
+.post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.post-title {
+  margin-bottom: 1rem;
+}
+
+.prose {
+  font-size: 1.125rem;
+  line-height: 1.75;
+}
+
+.prose h2,
+.prose h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background-color: var(--color-code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+}
+
+.prose pre {
+  background-color: var(--color-code-bg);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.prose pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Dark Mode Toggle */
+.theme-toggle {
+  background: none;
+  border: 2px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.2s ease;
+  color: var(--color-text);
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-accent);
+  transform: scale(1.05);
+}
+
+.theme-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.prose blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-light);
+  font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.25rem; }
+  
+  header .nav-links {
+    gap: 1rem;
+  }
+  
+  .prose {
+    font-size: 1rem;
+  }
+}

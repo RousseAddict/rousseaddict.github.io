@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+
+// Get all blog posts from content collection
+const posts = await Astro.glob('../content/blog/*.md');
+
+// Sort posts by date (newest first) and calculate reading time
+const sortedPosts = posts
+  .map(post => ({
+    ...post,
+    readingTime: calculateReadingTime(post.compiledContent())
+  }))
+  .sort((a, b) => 
+    new Date(b.frontmatter.pubDate).getTime() - new Date(a.frontmatter.pubDate).getTime()
+  );
+
+function calculateReadingTime(content: string): string {
+  const wordsPerMinute = 200;
+  const words = content.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / wordsPerMinute);
+  return `${minutes} min read`;
+}
+---
+
+<BaseLayout 
+  title="RousseAddict Blog"
+  description="Welcome to my minimalist blog"
+>
+  <h1>Latest Posts</h1>
+  
+  {sortedPosts.length === 0 ? (
+    <p>No posts yet. Check back soon!</p>
+  ) : (
+    sortedPosts.map((post) => (
+      <PostCard
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        pubDate={new Date(post.frontmatter.pubDate)}
+        slug={post.frontmatter.slug}
+        tags={post.frontmatter.tags}
+        readingTime={post.readingTime}
+      />
+    ))
+  )}
+</BaseLayout>
